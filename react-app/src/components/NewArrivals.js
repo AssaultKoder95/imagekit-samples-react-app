@@ -170,7 +170,7 @@ const NewArrivals = () => {return <div class="new_arrivals">
                     <div class="product product_filter">
                         <div class="product_image">
                             <img src="images/product_10.png" alt=""></img>
-                        </div>
+                        </div>  
                         <div class="favorite"></div>
                         <div class="product_info">
                             <h6 class="product_name"><a href="single.html">Pryma Headphones, Rose Gold & Grey</a></h6>
