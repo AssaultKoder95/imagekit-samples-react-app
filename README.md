@@ -7,7 +7,7 @@ This repo includes sample apps for:
 
 - React
 
-###General Section:
+### General Section:
 
 #### FAQs : WIP
 
