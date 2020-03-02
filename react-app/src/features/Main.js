@@ -7,11 +7,13 @@ import Newsletter from './common/Newsletter';
 import Blogs from './common/Blogs';
 
 // Page Specific Modules
-import Slider from './LandingPage/Slider';
-import Banner from './LandingPage/Banner';
-import NewArrivals from './LandingPage/NewArrivals';
-import DealOfWeek from './LandingPage/DealOfWeek';
-import BestSellers from './LandingPage/BestSellers';
+import {
+	Banner,
+	BestSellers,
+	DealOfWeek,
+	NewArrivals,
+	Slider
+} from './LandingPage';
 
 import Product from './Product';
 
