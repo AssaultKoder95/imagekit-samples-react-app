@@ -8,7 +8,7 @@ const Slider = () => {
                 <div className="main_slider_content">
                     <h6>Spring / Summer Collection 2017</h6>
                     <h1>Get up to 30% Off New Arrivals</h1>
-                    <div className="red_button shop_now_button"><a href="/index.html">shop now</a></div>
+                    <div className="red_button shop_now_button"><a href="#no-link">shop now</a></div>
                 </div>
             </div>
         </div>

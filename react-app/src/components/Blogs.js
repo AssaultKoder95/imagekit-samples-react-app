@@ -23,7 +23,7 @@ const Blogs = () => {
 									Here are the trends I see coming this fall
 								</h4>
 								<span className="blog_meta">by admin | dec 01, 2017</span>
-								<a className="blog_more" href="/index.html">
+								<a className="blog_more" href="#no-link">
 									Read more
 								</a>
 							</div>
@@ -40,7 +40,7 @@ const Blogs = () => {
 									Here are the trends I see coming this fall
 								</h4>
 								<span className="blog_meta">by admin | dec 01, 2017</span>
-								<a className="blog_more" href="/index.html">
+								<a className="blog_more" href="#no-link">
 									Read more
 								</a>
 							</div>
@@ -57,7 +57,7 @@ const Blogs = () => {
 									Here are the trends I see coming this fall
 								</h4>
 								<span className="blog_meta">by admin | dec 01, 2017</span>
-								<a className="blog_more" href="/index.html">
+								<a className="blog_more" href="#no-link">
 									Read more
 								</a>
 							</div>

@@ -31,7 +31,7 @@ const DealOfWeek = () => { return <div className="deal_ofthe_week">
                         <div className="timer_unit">Sec</div>
                     </li>
                 </ul>
-                <div className="red_button deal_ofthe_week_button"><a href="/index.html">shop now</a></div>
+                <div className="red_button deal_ofthe_week_button"><a href="#no-link">shop now</a></div>
             </div>
         </div>
     </div>
