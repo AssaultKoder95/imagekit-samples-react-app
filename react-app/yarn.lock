@@ -5018,6 +5018,23 @@ ignore@^4.0.6:
   resolved "http://orig-stage.imagekit.io:2772/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
+imagekit-javascript@^1.0.3:
+  version "1.1.1"
+  resolved "http://orig-stage.imagekit.io:2772/imagekit-javascript/-/imagekit-javascript-1.1.1.tgz#5caba6db511d856668f99a2163885b17166745dd"
+  integrity sha512-E0Q2S210jEmtHd7dgsNbGw1WFdQBfGPWQiYzJrJ0rwTdXFdg0EG8bQgLaDFUAcaVcgusH0YKoJVUg4ZCtPdRSA==
+  dependencies:
+    lodash "^4.17.15"
+    url-polyfill "^1.1.7"
+
+imagekitio-react@^1.0.3:
+  version "1.0.3"
+  resolved "http://orig-stage.imagekit.io:2772/imagekitio-react/-/imagekitio-react-1.0.3.tgz#5e37a833ad82afaf9b7e71b4efb0622e0baed2e7"
+  integrity sha512-nl6nojVA6fSGQYN+yPn4Xe/djSOUrpnapVUEKLbED/2nbyn5pLkbxqezHO9VRxygS6TMznIczW7nMbreC5Z2Uw==
+  dependencies:
+    imagekit-javascript "^1.0.3"
+    prop-types "^15.7.2"
+    react-scripts "^3.3.0"
+
 immer@1.10.0:
   version "1.10.0"
   resolved "http://orig-stage.imagekit.io:2772/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
@@ -8437,7 +8454,7 @@ react-router@5.1.2:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-scripts@3.4.0:
+react-scripts@3.4.0, react-scripts@^3.3.0:
   version "3.4.0"
   resolved "http://orig-stage.imagekit.io:2772/react-scripts/-/react-scripts-3.4.0.tgz#f413680f0b5b937c8879ba1ffdae9b8c5b364bf5"
   integrity sha512-pBqaAroFoHnFAkuX+uSK9Th1uEh2GYdGY2IG1I9/7HmuEf+ls3lLCk1p2GFYRSrLMz6ieQR/SyN6TLIGK3hKRg==
@@ -10069,6 +10086,11 @@ url-parse@^1.4.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+url-polyfill@^1.1.7:
+  version "1.1.8"
+  resolved "http://orig-stage.imagekit.io:2772/url-polyfill/-/url-polyfill-1.1.8.tgz#21eb58ad61192f52b77dcac8ab5293ae7bc67060"
+  integrity sha512-Ey61F4FEqhcu1vHSOMmjl0Vd/RPRLEjMj402qszD/dhMBrVfoUsnIj8KSZo2yj+eIlxJGKFdnm6ES+7UzMgZ3Q==
 
 url@^0.11.0:
   version "0.11.0"
