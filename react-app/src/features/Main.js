@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { IKContext } from 'imagekitio-react';
 
 // Common Modules
 import Benefits from './common/Benefits';
@@ -21,16 +22,21 @@ import Category from './Category';
 
 export default function RouterModule() {
 	return (
-		<Router>
-			<Switch>
-				<Route exact path="/" component={LandingPageModule}></Route>
-				<Route path="/categories" component={CategoryModule}></Route>
-				<Route path="/single-product" component={SingleProductModule}></Route>
-			</Switch>
+		<IKContext
+			publicKey="public_wl8pd3tjDmxldkdjlzVAKETHZ24="
+			urlEndpoint="https://ik.imagekit.io/tutorials/frontend_sdk_demo_files"
+		>
+			<Router>
+				<Switch>
+					<Route exact path="/" component={LandingPageModule}></Route>
+					<Route path="/categories" component={CategoryModule}></Route>
+					<Route path="/single-product" component={SingleProductModule}></Route>
+				</Switch>
 
-			<Benefits />
-			<Newsletter />
-		</Router>
+				<Benefits />
+				<Newsletter />
+			</Router>
+		</IKContext>
 	);
 }
 

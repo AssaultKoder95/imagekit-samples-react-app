@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { IKImage } from 'imagekitio-react';
 
-const ProductDisplay = () => {
+const ListItem = ({ img }) => {
 	return (
+		<li className="active">
+			<IKImage path={img.imgThumbnailURL} alt="this is alt text" data-image={img.imgURL} />
+		</li>
+	);
+};
+
+const imageList = ['single_1', 'single_2', 'single_3'].map(img => {
+	const imageDetailObj = {
+		imgURL: `${img}.jpg`,
+		imgThumbnailURL: `${img}_thumb.jpg`
+	};
+
+	return imageDetailObj;
+});
+
+class ProductDisplay extends Component {
+	render () { return (
 		<div className="container single_product_container">
 			<div className="row">
 				<div className="col">
@@ -33,27 +51,9 @@ const ProductDisplay = () => {
 							<div className="col-lg-3 thumbnails_col order-lg-1 order-2">
 								<div className="single_product_thumbnails">
 									<ul>
-										<li>
-											<img
-												src="images/single_1_thumb.jpg"
-												alt=""
-												data-image="images/single_1.jpg"
-											/>
-										</li>
-										<li className="active">
-											<img
-												src="images/single_2_thumb.jpg"
-												alt=""
-												data-image="images/single_2.jpg"
-											/>
-										</li>
-										<li>
-											<img
-												src="images/single_3_thumb.jpg"
-												alt=""
-												data-image="images/single_3.jpg"
-											/>
-										</li>
+										{											
+											<ListItem img={ imageList[0] }/>
+										}
 									</ul>
 								</div>
 							</div>
@@ -61,7 +61,7 @@ const ProductDisplay = () => {
 								<div className="single_product_image">
 									<div
 										className="single_product_image_background"
-										style={{ backgroundImage: "url(images/single_2.jpg)" }}
+										style={{ backgroundImage: 'url(images/single_2.jpg)' }}
 									></div>
 								</div>
 							</div>
@@ -104,9 +104,9 @@ const ProductDisplay = () => {
 						<div className="product_color">
 							<span>Select Color:</span>
 							<ul>
-								<li style= {{ background: "#e54e5d" }}></li>
-								<li style= {{ background: "#252525" }}></li>
-								<li style= {{ background: "#60b3f3" }}></li>
+								<li style={{ background: '#e54e5d' }}></li>
+								<li style={{ background: '#252525' }}></li>
+								<li style={{ background: '#60b3f3' }}></li>
 							</ul>
 						</div>
 						<div className="quantity d-flex flex-column flex-sm-row align-items-sm-center">
@@ -129,7 +129,7 @@ const ProductDisplay = () => {
 				</div>
 			</div>
 		</div>
-	);
+	) };
 };
 
 export default ProductDisplay;

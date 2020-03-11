@@ -1,5 +1,5 @@
 import React from 'react';
-import { IKContext, IKImage } from 'imagekitio-react';
+import { IKImage } from 'imagekitio-react';
 
 import './Styles.css';
 import './Responsive.css';
@@ -7,10 +7,6 @@ const transformation = [ { width: 174, height: 174 } ];
 
 const Category = () => {
 	return (
-		<IKContext
-			publicKey="public_wl8pd3tjDmxldkdjlzVAKETHZ24="
-			urlEndpoint="https://ik.imagekit.io/tutorials/frontend_sdk_demo_files"
-		>
 			<div className="container product_section_container">
 				<div className="row">
 					<div className="col product_section clearfix">
@@ -570,7 +566,6 @@ const Category = () => {
 					</div>
 				</div>
 			</div>
-		</IKContext>
 	);
 };
 
