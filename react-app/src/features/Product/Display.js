@@ -51,8 +51,8 @@ class ProductDisplay extends Component {
 							<div className="col-lg-3 thumbnails_col order-lg-1 order-2">
 								<div className="single_product_thumbnails">
 									<ul>
-										{											
-											<ListItem img={ imageList[0] }/>
+										{	
+											imageList.map(img => <ListItem img={ img }/>)
 										}
 									</ul>
 								</div>
