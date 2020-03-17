@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# IMAGEKIT REACT SDK DEMO
 
-## Available Scripts
+This demo app demonstrates the usage of ImageKit's React SDK.
 
-In the project directory, you can run:
+## Prerequisites
+The demo app is built using the following dependencies. Make sure to have your system's configuration match the requirements:
 
-### `yarn start`
+- Node: 10.16.3
+- Yarn: 1.19.1
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Installation
+You can clone the repo in your local development environment and install the packages using `yarn install-packages`.
 
-### `yarn test`
+We have bundled a basic implementation of server as well for the authentication URL, this command installs the packages for that as well.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The default port for the app is 3000 whereas for the for the server is 5500.
 
-### `yarn build`
+## Configuration
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You will need to update the `src/App.js` with your public key, url endpoint and authentication endpoint.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**Note: The current authentication endpoint is implemented inside the server folder.**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The server requires credentials to properly generate signatures for upload.
+To update the same, head over to `server/index.js` and here you can find placeholders for public key, private key as well as url endpoint.
+Populate the same and you will be able to generate signatures correctly.
 
-### `yarn eject`
+## Running the app
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The demo app can be started using `yarn start`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+React dropzone example
+dynamic file upload
+CSS fix
+readme file
+----------------------------------------------------------------
+smart crop better example
+manual cropping better example
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+NOT COVERED - background images by IK
