@@ -10,6 +10,7 @@
     "imagekitio-react": "^1.0.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-dropzone": "^10.2.1",
     "react-lazy-load-image-component": "^1.4.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0"
@@ -18,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install-packages": "yarn install && cd server && yarn install"
   },
   "eslintConfig": {
     "extends": "react-app"
