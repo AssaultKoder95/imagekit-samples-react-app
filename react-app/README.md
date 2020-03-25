@@ -32,11 +32,11 @@ The demo app can be started using `yarn start`.
 
 
 
-React dropzone example - DONE
-dynamic file upload
+dynamic file upload - half done
 CSS fix
 readme file - 1/2 DONE
 responsive images
+Service worker
 ----------------------------------------------------------------
 smart crop better example
 manual cropping better example
