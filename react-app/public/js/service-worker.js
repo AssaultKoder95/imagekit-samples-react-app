@@ -1,0 +1,2 @@
+// You can copy the link from your settings in dashboard ( https://imagekit.io/dashboard#settings ) under the network optimization tab. 
+importScripts("https://runtime.imagekit.io/tutorials/v1/js/network-based-adaption.js?v=" + new Date().getTime());
