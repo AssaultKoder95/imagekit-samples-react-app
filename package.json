@@ -4,11 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cd react-app && yarn install-packages",
-    "heroku-postbuild": "cd react-app && yarn run build"
+    "start": "cd react-app && yarn install-packages && cd ../",
+    "heroku-postbuild": "yarn run build"
   },
   "engines": {
-    "node": "10.16.3"
+    "node": "10.16.3",
+    "yarn": "1.19.1"
   }
 }
 
