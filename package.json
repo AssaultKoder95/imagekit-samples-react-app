@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install-packages": "cd server && yarn install && cd ../ && ysarn install && yarn build"
+    "install-packages": "cd server && yarn install && cd ../ && yarn install && yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
