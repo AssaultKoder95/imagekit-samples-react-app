@@ -7,7 +7,7 @@ const PORT = 5500;
 const app = express();
 
 app.use(cors());
-
+app.use(express.static(path.join(__dirname, '/../build')));
 
 // const imagekit = new ImageKit({
 //     publicKey : "your_public_api_key",
