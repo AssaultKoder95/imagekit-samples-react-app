@@ -43,7 +43,7 @@ const DealOfWeek = () => {
 								</li>
 							</ul>
 							<div className="red_button deal_ofthe_week_button">
-								<a href="#no-link">shop now</a>
+								<a href="/categories">shop now</a>
 							</div>
 						</div>
 					</div>

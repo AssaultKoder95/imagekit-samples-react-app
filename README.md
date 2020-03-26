@@ -33,12 +33,13 @@ The demo app can be started using `yarn start`.
 ## What does this demo include ?
 write about the features I have implemented in it and where to find what.
 
-dynamic file upload - half done
-CSS fix
-readme file - half DONE
-responsive images
-----------------------------------------------------------------
-smart crop better example
-manual cropping better example
 
-NOT COVERED - background images by IK
+## Pending tasks
+- dynamic file upload - half done
+- CSS fix
+- readme file - half DONE
+- responsive images fix
+- SW test on heroku
+- smart crop better example
+- manual cropping better example
+- background images by IK ( replace whereever possible )

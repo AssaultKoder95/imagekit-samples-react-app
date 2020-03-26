@@ -6,9 +6,9 @@ const Slider = () => {
         <div className="row align-items-center fill_height">
             <div className="col">
                 <div className="main_slider_content">
-                    <h6>ImageKit React SDK Demo</h6>
-                    <h1>File upload made easy</h1>
-                    <div className="red_button shop_now_button"><a href="/product-upload">Upload Now</a></div>
+                    <h6>Summer Collection Sale</h6>
+                    <h1>Get up to 30% Off New Arrivals</h1>
+                    <div className="red_button shop_now_button"><a href="/categories">Explore</a></div>
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ const PORT = 5500;
 const app = express();
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, '/../build')));
+// app.use(express.static(path.join(__dirname, '/../build')));
 
 // const imagekit = new ImageKit({
 //     publicKey : "your_public_api_key",
@@ -36,8 +36,8 @@ app.get('/api/auth', (req, res) => {
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
-app.get('*', (req, res) => {
-	res.sendFile(path.join(__dirname + '/../build/index.html'));
-});
+// app.get('*', (req, res) => {
+// 	res.sendFile(path.join(__dirname + '/../build/index.html'));
+// });
 
 app.listen(process.env.PORT || PORT, () => console.log(`Server listening on ${PORT}`));

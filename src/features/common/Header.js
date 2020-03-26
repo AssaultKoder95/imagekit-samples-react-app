@@ -63,13 +63,16 @@ const Header = () => {
 											<ul className="account_selection">
 												<li>
 													<a href="#no-link">
-														<i className="fa fa-sign-in" aria-hidden="true"></i>Sign
-														In
+														<i className="fa fa-sign-in" aria-hidden="true"></i>
+														Sign In
 													</a>
 												</li>
 												<li>
 													<a href="#no-link">
-														<i className="fa fa-user-plus" aria-hidden="true"></i>
+														<i
+															className="fa fa-user-plus"
+															aria-hidden="true"
+														></i>
 														Register
 													</a>
 												</li>
@@ -87,29 +90,23 @@ const Header = () => {
 						<div className="row">
 							<div className="col-lg-12 text-right">
 								<div className="logo_container">
-									<a href="#no-link">
+									<a href="/">
 										colo<span>shop</span>
 									</a>
 								</div>
 								<nav className="navbar">
 									<ul className="navbar_menu">
 										<li>
-											<a href="#no-link">home</a>
+											<a href="/">Home</a>
 										</li>
 										<li>
-											<a href="#no-link">shop</a>
+											<a href="/categories">Product Listing</a>
 										</li>
 										<li>
-											<a href="#no-link">promotion</a>
+											<a href="/single-product">Single Product Display</a>
 										</li>
 										<li>
-											<a href="#no-link">pages</a>
-										</li>
-										<li>
-											<a href="#no-link">blog</a>
-										</li>
-										<li>
-											<a href="contact.html">contact</a>
+											<a href="/product-upload">Product Upload</a>
 										</li>
 									</ul>
 									<ul className="navbar_user">
@@ -125,7 +122,10 @@ const Header = () => {
 										</li>
 										<li className="checkout">
 											<a href="#no-link">
-												<i className="fa fa-shopping-cart" aria-hidden="true"></i>
+												<i
+													className="fa fa-shopping-cart"
+													aria-hidden="true"
+												></i>
 												<span id="checkout_items" className="checkout_items">
 													2
 												</span>
@@ -202,28 +202,23 @@ const Header = () => {
 								</li>
 								<li>
 									<a href="#no-link">
-										<i className="fa fa-user-plus" aria-hidden="true"></i>Register
+										<i className="fa fa-user-plus" aria-hidden="true"></i>
+										Register
 									</a>
 								</li>
 							</ul>
 						</li>
 						<li className="menu_item">
-							<a href="#no-link">home</a>
+							<a href="/">Home</a>
 						</li>
 						<li className="menu_item">
-							<a href="#no-link">shop</a>
+							<a href="/categories">Product Listing</a>
 						</li>
 						<li className="menu_item">
-							<a href="#no-link">promotion</a>
+							<a href="/single-product">Single Product Display</a>
 						</li>
 						<li className="menu_item">
-							<a href="#no-link">pages</a>
-						</li>
-						<li className="menu_item">
-							<a href="#no-link">blog</a>
-						</li>
-						<li className="menu_item">
-							<a href="#no-link">contact</a>
+							<a href="/product-upload">Product Upload</a>
 						</li>
 					</ul>
 				</div>
