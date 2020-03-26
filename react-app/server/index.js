@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const ImageKit = require("imagekit");
 const PORT = 5500;
 
@@ -31,6 +32,12 @@ const imagekit = new ImageKit({
 app.get('/api/auth', (req, res) => {
     const authParams = imagekit.getAuthenticationParameters();
     res.send(authParams);
+});
+
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname + '/../build/index.html'));
 });
 
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
