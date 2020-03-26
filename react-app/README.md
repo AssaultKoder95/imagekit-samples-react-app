@@ -30,13 +30,13 @@ Populate the same and you will be able to generate signatures correctly.
 
 The demo app can be started using `yarn start`.
 
-
+## What does this demo include ?
+write about the features I have implemented in it and where to find what.
 
 dynamic file upload - half done
 CSS fix
-readme file - 1/2 DONE
+readme file - half DONE
 responsive images
-Service worker
 ----------------------------------------------------------------
 smart crop better example
 manual cropping better example
