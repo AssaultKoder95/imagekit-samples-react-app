@@ -6,6 +6,9 @@
   "scripts": {
     "start": "cd react-app && yarn install-packages",
     "heroku-postbuild": "cd react-app && yarn run build"
+  },
+  "engines": {
+    "node": "10.16.3"
   }
 }
 
