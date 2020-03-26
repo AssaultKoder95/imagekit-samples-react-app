@@ -1,0 +1,11 @@
+{
+  "name": "imagekit-samples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd react-app && yarn install-packages",
+    "heroku-postbuild": "cd react-app && yarn run build"
+  }
+}
+
