@@ -15,8 +15,7 @@ function createUploadData(data) {
 	uploadData.append('expire', data.expire);
 	uploadData.append('signature', data.signature);
 
-	// uploadData.append('publicKey', 'public_wl8pd3tjDmxldkdjlzVAKETHZ24=') // prod
-	uploadData.append('publicKey', 'LmviRpcmROpSQBRwXjZmAM75Mcg='); // dev
+	uploadData.append('publicKey', '6oogW9p+B5ZlRh7wRof6eB2OJZU=');
 
 	return uploadData;
 }
@@ -46,10 +45,7 @@ function MyDropzone() {
 					const uploadData = createUploadData(data);
 
 					axios
-						.post(
-							'http://dev-upload.imagekit.io/api/v1/files/upload',
-							uploadData
-						)
+						.post('http://upload.imagekit.io/api/v1/files/upload', uploadData)
 						.then(response => {
 							if (files && files.length) {
 								const updatedFiles = [...files];
@@ -62,7 +58,7 @@ function MyDropzone() {
 						});
 				});
 			};
-			reader.readAsBinaryString(acceptedFiles[0]);
+			reader.readAsDataURL(acceptedFiles[0]);
 		},
 		[files]
 	);
@@ -87,12 +83,12 @@ function MyDropzone() {
 					files.map((file, index) => {
 						return (
 							<div key={index}>
-								<span>{file.name} successfully uploaded</span>
-								<ul>
-									<li>File Path: {file.filePath}</li>
-									<li>Thumbnail: {file.thumbnail}</li>
-									<li>URL: {file.url}</li>
-								</ul>
+								<h5>Uploaded Images</h5>
+								<img
+									src={file.url + '?tr=n-media_library_thumbnail'}
+									alt="uploaded images"
+								/>
+								<span>{file.name}</span>
 							</div>
 						);
 					})}
@@ -131,21 +127,55 @@ const DropzoneFileUpload = () => {
 };
 
 const DynamicFileUpload = () => {
+	const [tags, setTags] = useState([]);
+	const [isPrivateFile, setIsPrivateFile] = useState(false);
+	const [fileName, setFileName] = useState('');
+
+	const typeActionObj = {
+		tags: setTags,
+		fileName: setFileName,
+		isPrivateFile: setIsPrivateFile
+	};
+
+	const genericHandler = (e, type) => {
+		e.preventDefault();
+		const value = e.target.value;
+		typeActionObj[type](value);
+	};
+
 	return (
 		<div className="mt-5">
-			<h4>Dynamic File Upload</h4>
+			<h4>Dynamic Fields File Upload</h4>
 			<div className="mt-2 form-group">
 				<input
 					name="name"
 					className="mt-2 form-control"
 					placeholder="filename"
+					onChange={e => genericHandler(e, 'fileName')}
 				/>
-				<input name="tags" className="mt-2 form-control" placeholder="tags" />
-				<select className="mt-2 form-control">
+
+				<input
+					name="tags"
+					className="mt-2 form-control"
+					placeholder="tags"
+					onChange={e => genericHandler(e, 'tags')}
+				/>
+
+				<select
+					className="mt-2 form-control"
+					onChange={e => genericHandler(e, 'isPrivateFile')}
+				>
 					<option>Is Private File</option>
 					<option value="true">True</option>
 					<option value="false">False</option>
 				</select>
+
+				<IKUpload
+					className="mt-2 form-control"
+					tags={tags}
+					fileName={fileName}
+					isPrivateFile={isPrivateFile}
+				/>
 			</div>
 		</div>
 	);
@@ -173,7 +203,7 @@ class ProductUpload extends Component {
 					</div>
 				</div>
 
-				<div className="row">
+				<div className="row" style={{ color: 'black' }}>
 					<div className="col-log-3"></div>
 					<div className="col-lg-6">
 						<SingleFileUpload />
