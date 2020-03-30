@@ -1,4 +1,5 @@
 import React from 'react';
+import { IKImage } from 'imagekitio-react';
 
 const Blogs = () => {
 	return (
@@ -14,10 +15,11 @@ const Blogs = () => {
 				<div className="row blogs_container">
 					<div className="col-lg-4 blog_item_col">
 						<div className="blog_item">
-							<div
+							<IKImage
 								className="blog_background"
-								style={ { backgroundImage : "url(images/blog_1.jpg)" } }
-							></div>
+								alt="blog content placeholder"
+								path="blog_1.jpg"
+							/>
 							<div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
 								<h4 className="blog_title">
 									Here are the trends I see coming this fall
@@ -31,10 +33,11 @@ const Blogs = () => {
 					</div>
 					<div className="col-lg-4 blog_item_col">
 						<div className="blog_item">
-							<div
+							<IKImage
 								className="blog_background"
-								style={ { backgroundImage : "url(images/blog_2.jpg)" } }
-							></div>
+								alt="blog content placeholder"
+								path="blog_2.jpg"
+							/>
 							<div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
 								<h4 className="blog_title">
 									Here are the trends I see coming this fall
@@ -48,10 +51,11 @@ const Blogs = () => {
 					</div>
 					<div className="col-lg-4 blog_item_col">
 						<div className="blog_item">
-							<div
+							<IKImage
 								className="blog_background"
-								style={ { backgroundImage : "url(images/blog_3.jpg)" } }
-							></div>
+								alt="blog content placeholder"
+								path="blog_3.jpg"
+							/>
 							<div className="blog_content d-flex flex-column align-items-center justify-content-center text-center">
 								<h4 className="blog_title">
 									Here are the trends I see coming this fall
